@@ -1,0 +1,248 @@
+@import 'https://fonts.googleapis.com/css2?family=Poppins&display=swap';
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background: #282c34;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #1b95e0 #282c34
+}
+
+*::-webkit-scrollbar {
+    width: 9px
+}
+
+*::-webkit-scrollbar-track {
+    background: #282c34
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #1b95e0;
+    border-radius: 50px
+}
+
+.hero .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+    height: 80vh;
+    color: #fff
+}
+
+.hero h4 {
+    font-size: 12px;
+    color: rgba(255, 255, 255, .4)
+}
+
+.hero h1 {
+    font-size: 70px;
+    color: #1b95e0
+}
+
+.hero h2 {
+    font-size: 50px;
+    color: rgba(255, 255, 255, .8)
+}
+
+.hero p {
+    margin-top: 40px;
+    color: rgba(255, 255, 255, .65);
+    width: 450px
+}
+
+.hero .btn {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: #1b95e0;
+    margin-top: 35px;
+    background: #1b95e0;
+    transition: all .4s ease;
+    width: 180px;
+    text-align: center
+}
+
+.hero .btn:hover {
+    transform: scale(1.06)
+}
+
+.hero img {
+    width: 600px
+}
+
+.hero .links .link {
+    color: #fff;
+    transform: rotate(90deg);
+    margin: 50px 0;
+    transition: all .4s ease;
+    color: rgba(255, 255, 255, .8)
+}
+
+.hero .links .link:hover {
+    transform: rotate(0) scale(1.06);
+    color: #fff
+}
+
+.hero .top_left {
+    position: absolute;
+    right: 50px;
+    top: 50px
+}
+
+.hero .top_left img {
+    width: 80px
+}
+
+@media(max-width:1250px) {
+    .hero .container {
+        flex-direction: column;
+        height: auto;
+        padding: 80px 0
+    }
+    .hero .text_box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 90px
+    }
+    .hero h2 {
+        display: none
+    }
+    .hero h4,
+    .hero h1,
+    .hero h2,
+    .hero p,
+    .hero a {
+        text-align: center
+    }
+    .hero p {
+        margin-top: 15px;
+        color: rgba(255, 255, 255, .65);
+        width: 450px
+    }
+    .hero h4 {
+        font-size: 20px;
+        color: #fff
+    }
+}
+
+@media(max-width:940px) {
+    .hero .links {
+        display: none
+    }
+    .hero .top_left {
+        position: absolute;
+        right: 10px;
+        top: 10px
+    }
+}
+
+@media(max-width:645px) {
+    .hero .container img {
+        width: 100%
+    }
+    .hero p {
+        margin-top: 15px;
+        color: rgba(255, 255, 255, .65);
+        width: 100%;
+        padding: 0 20px;
+    }
+    .hero h1 {
+        font-size: 50px;
+        color: #1b95e0
+    }
+}
+
+.outils {
+    top: -200px;
+}
+
+.outils .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.outils .container .card {
+      box-shadow: rgb(0 0 0 / 16%) 0 10px 36px 0, rgb(0 0 0 / 6%) 0 0 0 1px;
+    padding: 20px 50px;
+    width: 25%;
+    margin: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+        transition: all .4s ease;
+       align-items: center;
+}
+
+.outils .container .card:hover {
+       transform: scale(1.06)
+}
+
+
+.outils .container .card img {
+    width: 120px
+}
+
+@media(max-width:1250px) {
+    .outils .container .card {
+        width: 250px;
+        margin: 30px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+            flex-direction: column;
+    }
+}
+
+@media(max-width:645px) {
+    .creations {
+        margin: 150px 0 80px
+    }
+    .creations h2 {
+        letter-spacing: 10px;
+        color: rgba(255, 255, 255, .3);
+        padding: 0 10px;
+        font-size: 35px
+    }
+    .creations .container {
+        padding: 40px 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap
+    }
+    .creations .box {
+        width: 100%;
+        height: auto;
+        margin: 30px 20px
+    }
+    .outils .container .card {
+        width: 100%;
+        margin: 30px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+            flex-direction: column;
+    }
+}
+
